@@ -73,3 +73,7 @@ ul,
 ol {
   list-style: none;
 }
+
+:focus {
+  outline: 1.5px solid #22c55e; /* Adapte conforme o estilo do seu site */
+}
