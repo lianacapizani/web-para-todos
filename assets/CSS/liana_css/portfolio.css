@@ -1,0 +1,70 @@
+
+.portfolio-container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards-container {
+  margin: 6rem auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  
+}
+
+.card-item {
+  width: 36rem;
+  height: 36rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 30px #ccc;
+  border-radius: 8px;
+  transition: var(--transition);
+  
+}
+
+.card-item:hover {
+  transform: scale(1.05);
+}
+
+.card-item img {
+  width: 100%;
+  border-radius: 8px;
+  height: 200px; 
+  object-fit: cover;
+  object-position: center; 
+}
+
+.card-item h3 {
+  margin: 1.6rem 0 1em;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-light);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 8px 3.5rem;
+  border-radius: 5px;
+  color: var(--color-light);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+}

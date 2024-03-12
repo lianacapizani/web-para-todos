@@ -1,0 +1,154 @@
+/* container */
+.personal-container {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  margin: 4rem auto;
+  color: var(--color-dark-purple);
+}
+
+.personal-info {
+  margin: 4rem 8rem 4rem 0;
+  padding: 4rem;
+  width: 50%;
+  display: grid;
+  grid-template-areas: "title" "subtitle" "paragraph";
+  justify-content: left;
+  align-items: center;
+  height: 80vh;
+}
+
+.personal-info h1,
+.professional-info h1,
+.hobbies-info h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.personal-info h1 {
+  grid-area: title;
+  font-size: 4rem;
+}
+
+.personal-info p {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.personal-photo {
+  width: 45%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.personal-photo img {
+  margin: 4rem;
+  width: 100%;
+  height: 65vh;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/* Professional section styles */
+.professional-container {
+  background-color: var(--color-primary-light);
+  height: 70vh;
+  overflow: hidden; 
+}
+
+.professional-info {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.professional-info h1 {
+  color: var(--color-light);
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.professional-info p {
+  color: var(--color-light);
+  font-weight: 300;
+  font-size: 1.7rem;
+
+}
+
+/* Hobbies and Curiosities section styles */
+.hobbies-container {
+  width: 100%;
+  padding: 3rem;
+  background-color: var(--color-light);
+}
+
+.art-hobbie {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.art-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.art-image img {
+  border-radius: 240px 2px 240px 180px;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.hobbies-info {
+  width: 48%;
+
+  text-align: start;
+}
+
+.hobbies-info h1 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.hobbies-info p {
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem; 
+}
+
+/* imagens */
+.overlay-images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 4rem auto;
+}
+
+.overlay-images img {
+  width: 25rem;
+  height: 16rem;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay-images img:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  position: end;
+}
