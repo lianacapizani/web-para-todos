@@ -1,3 +1,9 @@
+:root {
+  --color-primary: #a179ce;
+  --color-dark: #0f172a;
+  --color-light: #fafafa;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +12,24 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #0f172a;
-  margin: 20px auto;
+  background-color: var(--color-light);
 }
 
 header,
 footer {
-  background-color: #0f172a;
-  color: #22c55e;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+}
+
+.header-content {
+  border-bottom: 1px solid var(--color-primary);
+
+  & p {
+    font-size: 20px;
+    margin: 10px;
+  }
 }
 
 .card-container {
@@ -23,26 +37,26 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  /*Permite que os cartões se movam para a próxima linha quando não há espaço suficiente na largura da tela.*/
   height: 80vh;
 }
 
 .card {
   text-decoration: none;
-  color: #ffff;
+  color: var(--color-light);
   width: 280px;
-  background-color: #22c55e;
+  background-color: var(--color-primary);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 30px #ccc;
   margin: 10px;
   transition: transform 0.3s ease-in-out;
-  /*Aplica uma transição suave de 0.3 segundos no efeito de escala durante o hover. */
+  filter: grayscale(0.8);
 }
 
 .card:hover {
   transform: scale(1.05);
-  /*Quando o usuário passa o mouse sobre o cartão ele aumenta de tamanho */
+  filter: grayscale(0.1);
+  background-color: var(--color-primary);
 }
 
 .card img {
@@ -52,6 +66,7 @@ footer {
   /*Garante que a imagem cubra completamente a área especificada, mantendo a proporção.*/
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  transition: 0.5s;
 }
 
 .card .info {
@@ -60,11 +75,10 @@ footer {
 }
 
 footer {
-  color: #22c55e;
   text-align: center;
   padding: 10px;
   position: fixed;
-  /*Fixa o rodapé na parte inferior da janela de visualização.*/
+
   bottom: 0;
   width: 100%;
 }
@@ -75,5 +89,5 @@ ol {
 }
 
 :focus {
-  outline: 1.5px solid #22c55e; /* Adapte conforme o estilo do seu site */
+  outline: 1.5px solid var(--color-primary); /* Adapte conforme o estilo do seu site */
 }
