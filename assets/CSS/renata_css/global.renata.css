@@ -1,0 +1,83 @@
+:root {
+  --color-primary: #8f78c7;
+  --color-primary-light: #a988ce;
+  --color-secondary: rgba(142, 178, 236, 0.738);
+  --color-light: rgb(241, 241, 241);
+  --color-dark-purple: rgb(70, 53, 100);
+  --color-dark: rgb(59, 59, 59);
+  --transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 62.5%; /*Equivale a 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--color-dark-purple);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh; /* Garante que o body tenha pelo menos 100% da altura da viewport */
+  /* text-transform: capitalize; */
+}
+
+/* CSS BARRA DE NAV */
+.menu {
+  background-color: var(--color-primary-light);
+  color: white;
+  padding: 10px;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  font-weight: 400;
+}
+
+.menu-item:hover {
+  padding-bottom: 9px;
+  border-bottom: 2.5px solid var(--color-light);
+  font-weight: 600;
+}
+
+/* TITULOS DAS PÁGINAS */
+.page-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 8rem 0 2rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* RODAPÉ */
+.footer {
+  background-color: var(--color-dark-purple);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}

@@ -1,0 +1,36 @@
+.contacts-container {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image:
+  linear-gradient(180deg, rgba(255,255,255,1) 0%, #7ac3a858 55%, rgba(182, 140, 200, 0.7) 100%, rgba(60,152,80,0.19371498599439774) 100%), url(../.././images/liana-images/bg-verde.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-container {
+  width: 100%;
+  min-height: 20vh;
+  padding: 4rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.icon {
+  color: var(--color-dark-purple);
+  font-size: 4vmin;
+  margin: 0.6rem;
+  padding: 1.4rem;
+  border: 1px solid var(--color-dark-purple);
+  border-radius: 100%;
+  transition: var(--transition);
+}
+
+.icon:hover {
+  background-color: #b80fa1;
+  color: var(--color-light);
+  border-color: transparent;
+}

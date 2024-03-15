@@ -1,0 +1,38 @@
+.hero-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient( #8c55ab7d 0%, #8434af7e 50%, #31a78330 100%),
+  url(../../images/liana-images/bg-verde.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.titles {
+  width: 100%;
+  padding: 5rem;
+  color: var(--color-light);
+  text-align: center;
+}
+
+.titles h1 {
+  color: var(--color-light);
+  text-shadow: 2px 2px 2px var(--color-light);
+  font-size: 6em;
+  font-weight: 900;
+  font-family: "Zen Loop", cursive;
+}
+
+.titles h3 {
+  font-size: 2em;
+  /* padding: 32px; */
+  font-weight: 400;
+  color: var(--color-light);
+}
+
+
