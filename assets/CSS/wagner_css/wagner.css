@@ -120,7 +120,7 @@ header .navbar ul li a.active::before {
     /* background-image: url("/assets/images/wagner_images/fundo.jpg"); */
 
     /* background-image: url("/assets/images/wagner_images/fundo.jpg"); */
-     background-image: url("/assets/images/wagner_images/fundo.jpg");
+     background-image: url("../../images/wagner_images/fundo.jpg");
 
     /* max-width: 100%; */
     /* box-sizing: border-box; */
