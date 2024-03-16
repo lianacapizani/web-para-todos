@@ -13,7 +13,6 @@ body {
 
 }
 
-
 .container {
     max-width: 1140px;
     margin: auto;
@@ -111,12 +110,12 @@ header .navbar ul li a.active::before {
 }
 
 .home {
-    width: auto%;
+    width: auto;
     /* min-height: 100vh; */
     /*imagem de funto teste*/
     /* background-image: url("/assets/images/wagner_images/fundo.jpg"); */
 
-    background-image: url("/assets/images/wagner_images/fundo22.jpg");
+    background-image: url("/assets/images/wagner_images/fundo.jpg");
 
     /* max-width: 100%; */
     /* box-sizing: border-box; */
@@ -440,7 +439,8 @@ header .navbar ul li a.active::before {
     /* Transição para todos os estilos com duração de 0.5 segundos */
 }
 
-/***   meio-parte1  **/
+/************   meio-parte1  *********************/
+
 /* Estilos para os ícones dos links sociais quando o mouse passa por cima */
 .about-me .about-content .text .social-links a:hover .fa {
     color: #000000;
