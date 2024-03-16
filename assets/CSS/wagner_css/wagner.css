@@ -109,13 +109,17 @@ header .navbar ul li a.active::before {
     left: 0;
 }
 
+
+/********* css do .home ********/
+
 .home {
     width: auto;
     /* min-height: 100vh; */
     /*imagem de funto teste*/
     /* background-image: url("/assets/images/wagner_images/fundo.jpg"); */
 
-    background-image: url("/assets/images/wagner_images/fundo.jpg");
+    /* background-image: url("/assets/images/wagner_images/fundo.jpg"); */
+     background-image: url("/assets/images/wagner_images/fundo.jpg");
 
     /* max-width: 100%; */
     /* box-sizing: border-box; */
