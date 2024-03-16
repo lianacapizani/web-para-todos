@@ -1,753 +1,737 @@
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 body {
-    margin: 0;
-    font-family: "Quicksand", sans-serif;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .container {
-    max-width: 1140px;
-    margin: auto;
+  max-width: 1140px;
+  margin: auto;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #0B0D0F;
-    /* Adapte conforme necessário */
-    z-index: 1000;
-    /* Certifique-se de que o cabeçalho está acima de outros elementos */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0b0d0f;
+  /* Adapte conforme necessário */
+  z-index: 1000;
+  /* Certifique-se de que o cabeçalho está acima de outros elementos */
 }
 
-
 header.fixed {
-    background-color: #ffffff;
-    position: fixed;
-    border-color: #eeeeee;
-    z-index: 1000;
+  background-color: #ffffff;
+  position: fixed;
+  border-color: #eeeeee;
+  z-index: 1000;
 }
 
 header .row {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .brand-name a {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 600;
-    color: #ffffff;
-    text-transform: uppercase;
-    position: relative;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
 }
 
 header.fixed .brand-name a {
-    color: #000000;
+  color: #000000;
 }
 
 header .navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 header .navbar ul li {
-    display: inline-block;
-    margin-left: 35px;
+  display: inline-block;
+  margin-left: 35px;
 }
 
 header .navbar ul li a {
-    font-size: 15px;
-    text-decoration: none;
-    line-height: 72px;
-    color: #ffffff;
-    display: block;
-    font-weight: 600;
-    position: relative;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 72px;
+  color: #ffffff;
+  display: block;
+  font-weight: 600;
+  position: relative;
 }
 
 header.fixed .navbar ul li a {
-    color: #000000;
+  color: #000000;
 }
 
 header .navbar ul li a::before {
-    content: '';
-    height: 1px;
-    background-color: #ffffff;
-    width: 0%;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    transition: all .5s ease;
+  content: "";
+  height: 1px;
+  background-color: #ffffff;
+  width: 0%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  transition: all 0.5s ease;
 }
 
 header.fixed .navbar ul li a::before {
-    background-color: #9C27B0;
+  background-color: #9c27b0;
 }
 
 header .navbar ul li a:hover::before {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 header .navbar ul li a.active::before {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 .home {
-    min-height: 100vh;
-    background-image: url("/assets/images/diego_images/fundo-desktop.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 15px;
+  min-height: 100vh;
+  background-image: url("../../images/diego_images/fundo-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
 }
 
 .home .full-screen {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .home .home-content {
-    flex: 0 0 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .home .home-content .block {
-    flex: 0 0 75%;
-    max-width: 75%;
-    padding-left: 35px;
-    border-left: 5px solid #ffffff;
-    margin-top: 50px;
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left: 35px;
+  border-left: 5px solid #ffffff;
+  margin-top: 50px;
 }
 
 .home .home-content .block h6 {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
 .home .home-content .block h1 {
-    color: #ffffff;
-    font-size: 70px;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
 .home .home-content .block h3 {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .home .home-content .block .cv-btn {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .home .home-content .block .cv-btn a {
-    border-radius: 4px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    padding: 12px 25px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all .8s ease;
-    background-color: transparent;
+  border-radius: 4px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.8s ease;
+  background-color: transparent;
 }
 
 .home .home-content .block .cv-btn a:hover {
-    background-color: #ffffff;
-    color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
-
-
 
 /* Estilos para a seção "Sobre Mim" */
 .about-me {
-    padding: 100px 15px;
-    /* Preenchimento de 100px no topo e na parte inferior, 15px nas laterais */
-    line-height: 1.8;
-    /* Altura da linha de 1.8 */
-    background-color: #fcf7f7;
-    /* Cor de fundo #fcf7f7 */
+  padding: 100px 15px;
+  /* Preenchimento de 100px no topo e na parte inferior, 15px nas laterais */
+  line-height: 1.8;
+  /* Altura da linha de 1.8 */
+  background-color: #fcf7f7;
+  /* Cor de fundo #fcf7f7 */
 }
 
 /* Estilos para o título da seção "Sobre Mim" */
 .about-me .section-title {
-    flex: 0 0 100%;
-    /* Flexibilidade do tamanho do elemento */
-    max-width: 100%;
-    /* Largura máxima de 100% */
-    margin-bottom: 40px;
-    /* Margem inferior de 40px */
+  flex: 0 0 100%;
+  /* Flexibilidade do tamanho do elemento */
+  max-width: 100%;
+  /* Largura máxima de 100% */
+  margin-bottom: 40px;
+  /* Margem inferior de 40px */
 }
 
 /* Estilos para o título h1 da seção "Sobre Mim" */
 .about-me .section-title h1 {
-    display: inline-block;
-    /* Exibição em bloco em linha */
-    font-size: 35px;
-    /* Tamanho da fonte de 35px */
-    text-transform: uppercase;
-    /* Transformação do texto para maiúsculas */
-    font-weight: 700;
-    /* Peso da fonte 700 */
-    margin: 0 0 25px;
-    /* Margem de 0 no topo, 0 nas laterais, 25px na parte inferior */
-    color: #000000;
-    /* Cor do texto #000000 */
-    position: relative;
-    /* Posição relativa */
-    padding-bottom: 5px;
-    /* Preenchimento na parte inferior de 5px */
+  display: inline-block;
+  /* Exibição em bloco em linha */
+  font-size: 35px;
+  /* Tamanho da fonte de 35px */
+  text-transform: uppercase;
+  /* Transformação do texto para maiúsculas */
+  font-weight: 700;
+  /* Peso da fonte 700 */
+  margin: 0 0 25px;
+  /* Margem de 0 no topo, 0 nas laterais, 25px na parte inferior */
+  color: #000000;
+  /* Cor do texto #000000 */
+  position: relative;
+  /* Posição relativa */
+  padding-bottom: 5px;
+  /* Preenchimento na parte inferior de 5px */
 }
 
 /* Estilos para o pseudo-elemento ::before do título h1 da seção "Sobre Mim" */
 .about-me .section-title h1:before {
-    content: '';
-    /* Conteúdo vazio */
-    left: 0;
-    /* Posicionamento à esquerda de 0 */
-    right: 30%;
-    /* Posicionamento à direita de 30% */
-    height: 2px;
-    /* Altura de 2px */
-    background-color: #9C27B0;
-    /* Cor de fundo #9C27B0 */
-    bottom: 0px;
-    /* Posicionamento na parte inferior de 0px */
-    position: absolute;
-    /* Posição absoluta */
+  content: "";
+  /* Conteúdo vazio */
+  left: 0;
+  /* Posicionamento à esquerda de 0 */
+  right: 30%;
+  /* Posicionamento à direita de 30% */
+  height: 2px;
+  /* Altura de 2px */
+  background-color: #9c27b0;
+  /* Cor de fundo #9C27B0 */
+  bottom: 0px;
+  /* Posicionamento na parte inferior de 0px */
+  position: absolute;
+  /* Posição absoluta */
 }
 
 /* Estilos para o texto em caixa alta dentro da seção "Sobre Mim" */
 .text-uppercase {
-    text-transform: uppercase;
-    /* Transformação do texto para maiúsculas */
+  text-transform: uppercase;
+  /* Transformação do texto para maiúsculas */
 }
 
 /* Estilos para o parágrafo pequeno dentro do título da seção "Sobre Mim" */
 .about-me .section-title p.small {
-    display: block;
-    /* Exibição em bloco */
-    font-size: 14px;
-    /* Tamanho da fonte de 14px */
-    color: #838383;
-    /* Cor do texto #838383 */
-    font-weight: 400;
-    /* Peso da fonte 400 */
-    line-height: 2px;
-    /* Altura da linha de 2px */
+  display: block;
+  /* Exibição em bloco */
+  font-size: 14px;
+  /* Tamanho da fonte de 14px */
+  color: #838383;
+  /* Cor do texto #838383 */
+  font-weight: 400;
+  /* Peso da fonte 400 */
+  line-height: 2px;
+  /* Altura da linha de 2px */
 }
 
 /* Estilos para a seção de conteúdo da "Sobre Mim" */
 .about-me .about-content .img {
-    flex: 0 0 33.33%;
-    /* Flexibilidade do tamanho do elemento para ocupar 1/3 da largura */
-    max-width: 33.33%;
-    /* Largura máxima de 1/3 */
+  flex: 0 0 33.33%;
+  /* Flexibilidade do tamanho do elemento para ocupar 1/3 da largura */
+  max-width: 33.33%;
+  /* Largura máxima de 1/3 */
 }
 
 /* Estilos para a imagem dentro do conteúdo da "Sobre Mim" */
 .about-me .about-content .img img {
-    width: 100%;
-    /* Largura da imagem com aumento de 5% */
-    border-radius: 80px 80px 200px 0px;
-    /* Borda arredondada */
-    display: block;
-    /* Exibição em bloco */
-    -webkit-transform: rotateY(180deg);
-    /* Transformação de rotação no eixo Y */
-    transform: rotateY(180deg);
-    /* Transformação de rotação no eixo Y */
+  width: 100%;
+  /* Largura da imagem com aumento de 5% */
+  border-radius: 80px 80px 200px 0px;
+  /* Borda arredondada */
+  display: block;
+  /* Exibição em bloco */
+  -webkit-transform: rotateY(180deg);
+  /* Transformação de rotação no eixo Y */
+  transform: rotateY(180deg);
+  /* Transformação de rotação no eixo Y */
 }
 
 /* Estilos para o texto dentro do conteúdo da "Sobre Mim" */
 .about-me .about-content .text {
-    flex: 0 0 66.66%;
-    /* Flexibilidade do tamanho do elemento para ocupar 2/3 da largura */
-    max-width: 66.66%;
-    /* Largura máxima de 2/3 */
-    padding-left: 40px;
-    /* Preenchimento à esquerda de 40px */
+  flex: 0 0 66.66%;
+  /* Flexibilidade do tamanho do elemento para ocupar 2/3 da largura */
+  max-width: 66.66%;
+  /* Largura máxima de 2/3 */
+  padding-left: 40px;
+  /* Preenchimento à esquerda de 40px */
 }
 
 /* Estilos para o título h4 dentro do texto do conteúdo da "Sobre Mim" */
 .about-me .about-content .text h4 {
-    font-size: 25px;
-    /* Tamanho da fonte de 25px */
-    font-weight: 600;
-    /* Peso da fonte 600 */
-    margin: 0 0 5px;
-    /* Margem inferior de 5px */
-    color: #000000;
-    /* Cor do texto #000000 */
+  font-size: 25px;
+  /* Tamanho da fonte de 25px */
+  font-weight: 600;
+  /* Peso da fonte 600 */
+  margin: 0 0 5px;
+  /* Margem inferior de 5px */
+  color: #000000;
+  /* Cor do texto #000000 */
 }
 
 /* Estilos para o subtítulo h6 dentro do texto do conteúdo da "Sobre Mim" */
 .about-me .about-content .text h6 {
-    font-size: 18px;
-    /* Tamanho da fonte de 18px */
-    font-weight: 500;
-    /* Peso da fonte 500 */
-    margin: 0 0 10px;
-    /* Margem inferior de 10px */
-    color: #000000;
-    /* Cor do texto #000000 */
+  font-size: 18px;
+  /* Tamanho da fonte de 18px */
+  font-weight: 500;
+  /* Peso da fonte 500 */
+  margin: 0 0 10px;
+  /* Margem inferior de 10px */
+  color: #000000;
+  /* Cor do texto #000000 */
 }
 
 /* Estilos para o texto dentro do conteúdo da "Sobre Mim" */
 .about-me .about-content .text p {
-    font-size: 15px;
-    /* Tamanho da fonte de 15px */
-    font-weight: 400;
-    /* Peso da fonte 400 */
-    line-height: 24px;
-    /* Altura da linha de 24px */
-    color: #404040;
-    /* Cor do texto #404040 */
-    margin: 0 0 5px;
-    /* Margem inferior de 5px */
+  font-size: 15px;
+  /* Tamanho da fonte de 15px */
+  font-weight: 400;
+  /* Peso da fonte 400 */
+  line-height: 24px;
+  /* Altura da linha de 24px */
+  color: #404040;
+  /* Cor do texto #404040 */
+  margin: 0 0 5px;
+  /* Margem inferior de 5px */
 }
 
 /* Estilos para as informações dentro do texto do conteúdo da "Sobre Mim" */
 .about-me .about-content .text .info {
-    display: flex;
-    /* Exibição em linha */
-    flex-wrap: wrap;
-    /* Quebra de linha */
-    justify-content: space-between;
-    /* Justificação entre os itens */
+  display: flex;
+  /* Exibição em linha */
+  flex-wrap: wrap;
+  /* Quebra de linha */
+  justify-content: space-between;
+  /* Justificação entre os itens */
 }
 
 /* Estilos para os dados dentro das informações do texto do conteúdo da "Sobre Mim" */
 .about-me .about-content .text .info .data {
-    flex: 0 0 calc(50% - 15px);
-    /* Flexibilidade do tamanho do elemento para ocupar metade da largura com margem */
-    max-width: calc(50% - 15px);
-    /* Largura máxima de metade com margem */
-    margin-top: 10px;
-    /* Margem superior de 10px */
-    display: flex;
-    /* Exibição em linha */
-    flex-wrap: wrap;
-    /* Quebra de linha */
-    border-bottom: 1px solid #838383;
-    /* Borda inferior de 1px sólida #838383 */
-    padding-bottom: 10px;
-    /* Preenchimento inferior de 10px */
+  flex: 0 0 calc(50% - 15px);
+  /* Flexibilidade do tamanho do elemento para ocupar metade da largura com margem */
+  max-width: calc(50% - 15px);
+  /* Largura máxima de metade com margem */
+  margin-top: 10px;
+  /* Margem superior de 10px */
+  display: flex;
+  /* Exibição em linha */
+  flex-wrap: wrap;
+  /* Quebra de linha */
+  border-bottom: 1px solid #838383;
+  /* Borda inferior de 1px sólida #838383 */
+  padding-bottom: 10px;
+  /* Preenchimento inferior de 10px */
 }
 
 /* Estilos para a etiqueta dentro dos dados dentro das informações do texto do conteúdo da "Sobre Mim" */
 .about-me .about-content .text .info .data label {
-    padding-right: 10px;
-    /* Preenchimento à direita de 10px */
-    color: #000000;
-    /* Cor do texto #000000 */
-    font-weight: 600;
-    /* Peso da fonte 600 */
-    font-size: 15px;
-    /* Tamanho da fonte de 15px */
+  padding-right: 10px;
+  /* Preenchimento à direita de 10px */
+  color: #000000;
+  /* Cor do texto #000000 */
+  font-weight: 600;
+  /* Peso da fonte 600 */
+  font-size: 15px;
+  /* Tamanho da fonte de 15px */
 }
 
 /* Estilos para os parágrafos dos dados dentro das informações da seção "Sobre Mim" */
 .about-me .about-content .text .info .data p {
-    margin: 0;
-    /* Margem zero para remover margens padrão */
+  margin: 0;
+  /* Margem zero para remover margens padrão */
 }
 
 /* Estilos para os links sociais dentro do conteúdo da seção "Sobre Mim" */
 .about-me .about-content .text .social-links {
-    padding-top: 25px;
-    /* Preenchimento superior de 25px */
+  padding-top: 25px;
+  /* Preenchimento superior de 25px */
 }
 
 /* Estilos para os links sociais dentro do conteúdo da seção "Sobre Mim" */
 .about-me .about-content .text .social-links a {
-    height: 30px;
-    /* Altura de 30px */
-    width: 30px;
-    /* Largura de 30px */
-    background-color: black;
-    /* Cor de fundo preta */
-    border-radius: 3px;
-    /* Borda arredondada de 3px */
-    display: inline-block;
-    /* Exibição em bloco em linha */
-    border: 1px solid #000000;
-    /* Borda sólida de 1px */
-    line-height: 28px;
-    /* Altura da linha de 28px */
-    text-align: center;
-    /* Alinhamento central do texto */
-    margin: 0 1;
-    /* Margem de 0 nas laterais e de 1 no topo e na parte inferior */
+  height: 30px;
+  /* Altura de 30px */
+  width: 30px;
+  /* Largura de 30px */
+  background-color: black;
+  /* Cor de fundo preta */
+  border-radius: 3px;
+  /* Borda arredondada de 3px */
+  display: inline-block;
+  /* Exibição em bloco em linha */
+  border: 1px solid #000000;
+  /* Borda sólida de 1px */
+  line-height: 28px;
+  /* Altura da linha de 28px */
+  text-align: center;
+  /* Alinhamento central do texto */
+  margin: 0 1;
+  /* Margem de 0 nas laterais e de 1 no topo e na parte inferior */
 }
 
 /* Estilos para os links sociais quando o mouse passa por cima */
 .about-me .about-content .text .social-links a:hover {
-    background-color: transparent;
-    /* Cor de fundo transparente */
+  background-color: transparent;
+  /* Cor de fundo transparente */
 }
 
 /* Estilos para os ícones dos links sociais */
 .about-me .about-content .text .social-links a .fa {
-    color: #ffffff;
-    /* Cor do ícone branca */
-    font-size: 12px;
-    /* Tamanho da fonte de 12px */
-    -webkit-transition: all .5s ease;
-    /* Transição para todos os estilos com duração de 0.5 segundos */
-    transition: all .5s ease;
-    /* Transição para todos os estilos com duração de 0.5 segundos */
+  color: #ffffff;
+  /* Cor do ícone branca */
+  font-size: 12px;
+  /* Tamanho da fonte de 12px */
+  -webkit-transition: all 0.5s ease;
+  /* Transição para todos os estilos com duração de 0.5 segundos */
+  transition: all 0.5s ease;
+  /* Transição para todos os estilos com duração de 0.5 segundos */
 }
 
 /* Estilos para os ícones dos links sociais quando o mouse passa por cima */
 .about-me .about-content .text .social-links a:hover .fa {
-    color: #000000;
-    /* Cor do ícone preta */
+  color: #000000;
+  /* Cor do ícone preta */
 }
 
 /* Estilos para o quadrado */
 .quadrado {
-    width: 150px;
-    /* Largura de 150px */
-    height: 1px;
-    /* Altura de 1px */
-    position: relative;
-    /* Posição relativa */
-    top: -40px;
-    /* Deslocamento para cima de 40px */
-    left: -55px;
-    /* Deslocamento para a esquerda de 55px */
-    right: -55px;
-    /* Deslocamento para a direita de 55px */
-    transform: rotate(-135deg);
-    /* Rotação de -135 graus */
+  width: 150px;
+  /* Largura de 150px */
+  height: 1px;
+  /* Altura de 1px */
+  position: relative;
+  /* Posição relativa */
+  top: -40px;
+  /* Deslocamento para cima de 40px */
+  left: -55px;
+  /* Deslocamento para a esquerda de 55px */
+  right: -55px;
+  /* Deslocamento para a direita de 55px */
+  transform: rotate(-135deg);
+  /* Rotação de -135 graus */
 }
 
 /* Estilos para o diamante */
 .diamante {
-    width: 20px;
-    /* Largura de 20px */
-    height: 20px;
-    /* Altura de 20px */
-    border: 1px solid #5c0fa9;
-    /* Borda sólida de 1px com cor #5c0fa9 */
-    position: relative;
-    /* Posição relativa */
+  width: 20px;
+  /* Largura de 20px */
+  height: 20px;
+  /* Altura de 20px */
+  border: 1px solid #5c0fa9;
+  /* Borda sólida de 1px com cor #5c0fa9 */
+  position: relative;
+  /* Posição relativa */
 }
 
 /* Estilos para a linha 1 */
 .linha1 {
-    width: 50px;
-    /* Largura de 50px */
-    position: relative;
-    /* Posição relativa */
-    margin-top: -25px;
-    /* Margem negativa superior de -25px */
-    border: 1px solid #5c0fa9;
-    /* Borda sólida de 1px com cor #5c0fa9 */
-    transform: rotate(135deg);
-    /* Rotação de 135 graus */
+  width: 50px;
+  /* Largura de 50px */
+  position: relative;
+  /* Posição relativa */
+  margin-top: -25px;
+  /* Margem negativa superior de -25px */
+  border: 1px solid #5c0fa9;
+  /* Borda sólida de 1px com cor #5c0fa9 */
+  transform: rotate(135deg);
+  /* Rotação de 135 graus */
 }
 
 /* Estilos para a linha 2 */
 .linha2 {
-    width: 40px;
-    /* Largura de 40px */
-    position: relative;
-    /* Posição relativa */
-    margin-top: 35px;
-    /* Margem superior de 35px */
-    border: 1px solid #5c0fa9;
-    /* Borda sólida de 1px com cor #5c0fa9 */
-    transform: rotate(135deg);
-    /* Rotação de 135 graus */
-    right: 33px;
-    /* Deslocamento para a direita de 33px */
+  width: 40px;
+  /* Largura de 40px */
+  position: relative;
+  /* Posição relativa */
+  margin-top: 35px;
+  /* Margem superior de 35px */
+  border: 1px solid #5c0fa9;
+  /* Borda sólida de 1px com cor #5c0fa9 */
+  transform: rotate(135deg);
+  /* Rotação de 135 graus */
+  right: 33px;
+  /* Deslocamento para a direita de 33px */
 }
-
-
 
 /* hobbies */
 
 .hobbies {
-    padding: 100px 15px;
-    background-color: #ffffff;
+  padding: 100px 15px;
+  background-color: #ffffff;
 }
 
 .hobbies .hobbies-content {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-right: 30px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 30px;
 }
 
 /* responsivo ok */
 .hobbies .img {
-    flex: 0 0 50%;
-    max-width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .hobbies .img img {
-    width: 100%;
-    display: block;
-    border-radius: 80px 80px 200px 0px;
-
+  width: 100%;
+  display: block;
+  border-radius: 80px 80px 200px 0px;
 }
 
 align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .hobbies .hobbies-content .section-title p {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #404040;
-    margin: 0 0 0px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #404040;
+  margin: 0 0 0px;
 }
 
 .hobbies .hobbies-content .hobbies-box {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
 .hobbies .hobbies-content .hobbies-box h6 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #000000;
-    margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 0 8px;
 }
 
-
-
 .hobbies .hobbies-content .skill-box .skill-bar .skill-bar-in span {
-    color: #838383;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    right: 0;
-    top: -30px;
-
+  color: #838383;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  top: -30px;
 }
 
 */ contato .contact-us {
-    padding: 100px 15px;
-    background-color: #ffffff;
-    border: 1px solid #eeeeee;
+  padding: 100px 15px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .contact-us .section-title {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .contact-us .section-title h1 {
-    display: inline-block;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 25px;
-    color: #000000;
-    position: relative;
-    padding-bottom: 5px;
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 25px;
+  color: #000000;
+  position: relative;
+  padding-bottom: 5px;
 }
 
 .contact-us .section-title h1:before {
-    content: '';
-    left: 30%;
-    right: 30%;
-    height: 2px;
-    background-color: #9C27B0;
-    bottom: 0px;
-    position: absolute;
+  content: "";
+  left: 30%;
+  right: 30%;
+  height: 2px;
+  background-color: #9c27b0;
+  bottom: 0px;
+  position: absolute;
 }
 
 .contact-us .contact-form {
-    background-color: #ffffff;
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding: 50px;
-    border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 50px;
+  border: 1px solid #eeeeee;
 }
 
 .contact-us .contact-form .text {
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding-bottom: 20px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
 }
 
 .contact-us .contact-form .text h2 {
-    font-size: 25px;
-    font-weight: 600;
-    color: #000000;
-    margin: 0;
-    padding: 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-us .contact-form .text p {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #838383;
-    margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0;
 }
 
 .contact-us .contact-form .space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .contact-us .contact-form .col-6 {
-    flex: 0 0 calc(50% - 15px);
-    max-width: calc(50% - 15px);
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
 }
 
 .contact-us .contact-form .col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .contact-us .contact-form .form-control {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-us .contact-form textarea.form-control {
-    height: 140px;
+  height: 140px;
 }
 
 .contact-us .contact-form .form-control:placeholder {
-    color: #838383;
+  color: #838383;
 }
 
 .contact-us .contact-form .button {
-    flex: 0 0 100%;
-    max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .contact-us .contact-form .button a {
-    border-radius: 4px;
-    color: #ffffff;
-    padding: 12px 25px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all .5s ease;
-    background-color: #9C27B0;
-    box-shadow: 0px 0px 15px #d5d5d5;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  background-color: #9c27b0;
+  box-shadow: 0px 0px 15px #d5d5d5;
 }
 
 .contact-us .contact-form .button a:hover {
-    background-color: #000000;
-    color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
 }
-
-
 
 /* rodapé */
 
 footer {
-    padding: 80px 15px;
-    background-color: #0c0c17;
+  padding: 80px 15px;
+  background-color: #0c0c17;
 }
 
 footer .logo {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    font-size: 45px;
-    color: #ffffff;
-    font-weight: 900;
-
-
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 900;
 }
 
 footer .social {
-    flex: 0 0 100%;
-    max-width: 100%;
-    font-size: 40px;
-    text-align: center;
-    padding: 12px;
-    box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 footer .social a {
-    color: #999999;
-    display: inline-block;
-    margin: 0px 12px;
-    transition: all .5s ease;
+  color: #999999;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all 0.5s ease;
 }
 
 footer .social a:hover {
-    color: #5c0fa9;
+  color: #5c0fa9;
 }
-
-
 
 /* copyright */
 
 .copyright {
-    background-color: #0c0c17;
-    padding: 15px;
+  background-color: #0c0c17;
+  padding: 15px;
 }
 
 .copyright p {
-    color: #838383;
-    margin: 0;
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
+  color: #838383;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .ham-burger .fa {
-    font-size: 20px;
-    height: 30px;
-    width: 35px;
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 3px;
-    line-height: 30px;
-    text-align: center;
-    cursor: pointer;
-    display: none;
-    border: 1px solid #eeeeee;
+  font-size: 20px;
+  height: 30px;
+  width: 35px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 3px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  border: 1px solid #eeeeee;
 }
-
 
 /* 
   Sessão para telas até 768px de largura:
@@ -757,86 +741,85 @@ footer .social a:hover {
   - Define estilos para elementos na seção .about-me
   - Define estilos para elementos na seção .hobbies
 */
-@media(max-width: 768px) {
-    .home .home-content .block h1 {
-        font-size: 35px;
-    }
+@media (max-width: 768px) {
+  .home .home-content .block h1 {
+    font-size: 35px;
+  }
 
-    .home .home-content .block h3 {
-        font-size: 20px;
-    }
+  .home .home-content .block h3 {
+    font-size: 20px;
+  }
 
-    header {
-        padding: 15px;
-        position: fixed;
-        background-color: #ffffff;
-        border: none;
-        border-bottom: 1px solid #eeeeee;
-    }
+  header {
+    padding: 15px;
+    position: fixed;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+  }
 
-    header .brand-name a {
-        color: #000000;
-    }
+  header .brand-name a {
+    color: #000000;
+  }
 
-    .ham-burger .fa {
-        display: inline-block;
-    }
+  .ham-burger .fa {
+    display: inline-block;
+  }
 
-    .navbar {
-        position: absolute;
-        background-color: #ffffff;
-        width: 100%;
-        left: 0px;
-        top: 60px;
-        padding: 15px;
-        border-top: 1px solid #eeeeee;
-        display: none;
-    }
+  .navbar {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    padding: 15px;
+    border-top: 1px solid #eeeeee;
+    display: none;
+  }
 
-    .navbar.show {
-        display: block;
-    }
+  .navbar.show {
+    display: block;
+  }
 
-    header .navbar ul li {
-        display: block;
-        margin-left: 0;
-    }
+  header .navbar ul li {
+    display: block;
+    margin-left: 0;
+  }
 
-    header .navbar ul li a {
-        line-height: 42px;
-        color: #000000;
-    }
+  header .navbar ul li a {
+    line-height: 42px;
+    color: #000000;
+  }
 
-    header .navbar ul li a::before {
-        background-color: #9C27B0;
-        ;
-        height: 2px;
-    }
+  header .navbar ul li a::before {
+    background-color: #9c27b0;
+    height: 2px;
+  }
 
-    .about-me .about-content .text {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-left: 0px;
-        padding-top: 30px;
-    }
+  .about-me .about-content .text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
 
-    .about-me .about-content .img {
-        flex: 0 0 100%;
-        max-width: 100%;
-        border-radius: 12px;
-    }
+  .about-me .about-content .img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-radius: 12px;
+  }
 
-    .hobbies .hobbies-content {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-right: 0px;
-    }
+  .hobbies .hobbies-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0px;
+  }
 
-    .hobbies .img {
-        flex: 0 0 100%;
-        max-width: 100%;
-        border-radius: 18px;
-    }
+  .hobbies .img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-radius: 18px;
+  }
 }
 
 /* 
@@ -844,24 +827,23 @@ footer .social a:hover {
   - Altera o tamanho da fonte dos títulos na seção .home
   - Define estilos para a galeria na seção .portfolio
 */
-@media(max-width: 500px) {
-    .home .home-content .block h1 {
-        font-size: 25px;
-    }
+@media (max-width: 500px) {
+  .home .home-content .block h1 {
+    font-size: 25px;
+  }
 
-    .home .home-content .block h3 {
-        font-size: 20px;
-    }
+  .home .home-content .block h3 {
+    font-size: 20px;
+  }
 
-    .home .home-content .block {
-        padding-left: 20px;
-        ;
-    }
+  .home .home-content .block {
+    padding-left: 20px;
+  }
 
-    .portfolio .portfolio-gallery .item {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+  .portfolio .portfolio-gallery .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 /* 
@@ -869,26 +851,26 @@ footer .social a:hover {
   - Define estilos para o cabeçalho (header)
   - Altera o tamanho da fonte em elementos da seção .about-me
 */
-@media(max-width: 375px) {
-    header {
-        width: 100%;
-    }
+@media (max-width: 375px) {
+  header {
+    width: 100%;
+  }
 
-    .about-me .about-content .text .info {
-        font-size: 10px;
-    }
+  .about-me .about-content .text .info {
+    font-size: 10px;
+  }
 
-    .about-me .about-content .text p {
-        font-size: 15px;
-        font-weight: 400;
-    }
+  .about-me .about-content .text p {
+    font-size: 15px;
+    font-weight: 400;
+  }
 
-    .about-me .about-content .text .info .data label {
-        font-size: 12px;
-    }
+  .about-me .about-content .text .info .data label {
+    font-size: 12px;
+  }
 
-    .about-me .about-content .text .info .data p {
-        flex: 0 0 100%;
-        font-size: 10px;
-    }
+  .about-me .about-content .text .info .data p {
+    flex: 0 0 100%;
+    font-size: 10px;
+  }
 }
